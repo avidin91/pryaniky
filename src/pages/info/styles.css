@@ -1,0 +1,10 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+
+.info-button {
+    width: fit-content;
+}

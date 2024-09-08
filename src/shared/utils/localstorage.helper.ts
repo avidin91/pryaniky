@@ -1,12 +1,12 @@
 export const getTokenFromLocalStorage = (): string => {
-	const data = localStorage.getItem('token');
+	const data = localStorage.getItem('x-auth');
 	return data ? JSON.parse(data) : '';
 };
 
 export const setTokenToLocalStorage = (token: string): void => {
-	localStorage.setItem('token', JSON.stringify(token));
+	localStorage.setItem('x-auth', JSON.stringify(token));
 };
 
 export const removeTokenFromLocalStorage = () => {
-	localStorage.removeItem('token');
+	localStorage.removeItem('x-auth');
 };

@@ -1,0 +1,13 @@
+.auth {
+    padding-top: 100px;
+}
+
+.auth-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.auth h1 {
+    text-align: center;
+}

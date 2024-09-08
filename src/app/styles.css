@@ -1,0 +1,3 @@
+.main-layout {
+    min-height: var(--main-layout-min-height);
+}

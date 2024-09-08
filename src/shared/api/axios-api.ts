@@ -1,9 +1,13 @@
 import axios from 'axios';
-import { getTokenFromLocalStorage } from '@shared/utils/localstorage.helper';
+import {getTokenFromLocalStorage} from "../utils/localstorage.helper";
 
-export const instance = axios.create({
-	baseURL: 'http://localhost:3009/api',
+export const instanceNoHeaders = axios.create({
+	baseURL: 'https://test.v5.pryaniky.com',
+});
+
+export const instanceWithHeaders = axios.create({
+	baseURL: 'https://test.v5.pryaniky.com',
 	headers: {
-		Authorization: 'Bearer ' + getTokenFromLocalStorage(),
+		'x-auth': getTokenFromLocalStorage()
 	},
 });

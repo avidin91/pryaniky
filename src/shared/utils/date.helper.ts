@@ -1,4 +1,4 @@
-export const isoToDateString = (isoString) => {
+export const isoToDateString = (isoString: string) => {
     const date = isoString.slice(0, 10); // "2023-10-27"
     const time = isoString.slice(11, 19); // "10:35:22"
 

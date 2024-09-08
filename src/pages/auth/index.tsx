@@ -33,15 +33,14 @@ export const Auth = () => {
 
     return (
         <div className={'auth'}>
+            <h1 >Войдите в аккаунт</h1>
             <Form
                 name="basic"
-                labelCol={{span: 8}}
-                wrapperCol={{span: 16}}
+                labelCol={{span: 6}}
                 className={'auth-form'}
-                initialValues={{remember: true}}
                 onFinish={onFinish}
                 onFinishFailed={onFinishFailed}
-                autoComplete="off"
+                layout={'horizontal'}
             >
                 <Form.Item<FieldType>
                     label="Имя"
